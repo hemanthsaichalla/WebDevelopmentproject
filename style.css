@@ -1,0 +1,380 @@
+/*
+Hemanth Sai Challa		
+Red_ID:824670867
+CS545
+Assignment #4
+Fall 2019
+Instructor:Cyndi Chie
+*/
+
+
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+	line-height: 18px;
+}
+body,html{
+	height:100%;
+}
+
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana;
+	font-size:12pt;
+}
+/* for header styles */
+header {
+    background: #7E354D;
+    padding-top: 20px;	
+	margin:auto;
+	
+}
+#logo {
+    display: inline-block;
+    
+}
+#logo a{
+	color: #FFF;
+}
+#logo img {
+    float: left;
+	width: 140px;
+	height: 120px;
+	padding-left:15px;
+	background: #7E354D;
+	
+}
+#logo h3{
+	position: relative;
+	left: -15px;	
+	top:10px;
+	float:left;
+	border-left: 0px solid #fff;
+	padding-left: 180px;
+		
+}
+/*
+@media all and (min-width: 600px) {
+#logo h3 {font-size: 24pt;}
+}
+
+@media all and (min-width: 800px) {
+#logo h3 {font-size: 30pt;}
+}
+
+@media all and (min-width: 1000px) {
+#logo h3 {font-size: 36pt;}
+}*/
+
+/* for navigation styles */
+nav{
+	background-color: #400040;
+	margin-top: 10px;
+	border-top: 2px solid #fff;	
+}
+nav ul{
+	list-style-type:none;
+	
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+	font-size: 14pt;
+	text-decoration: none;
+	color: #fff;
+	padding:20px;
+	display:block;
+}
+nav ul li:hover {
+	background: #C24641;
+}
+nav ul li:active {
+	background: #555;
+}
+
+/* styles for dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+	background-color: #400040;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #C24641;
+}
+.main {
+	float: left;
+	width: 100%;
+}
+aside {
+	float: left;
+	width: 50%;
+	margin: 20pt 5pt;
+}
+aside a{
+	color:#555;
+	text-decoration:none;
+}
+aside div{
+margin-bottom:20px	
+	
+}
+
+/* styles for article */
+article {
+    margin: 30pt 0pt;
+	color:#555;
+}
+article a{
+	color:#555;
+	text-decoration:none;
+}
+article a:hover,aside a:hover{
+	color:#800000;
+	text-decoration:underline;
+}
+article h2 {
+    margin-bottom: 12px;
+}
+article ul{
+    list-style-type:none
+}
+address {
+    padding: 10px 20px 30px 10px;
+}
+
+/* styles for main body content alignment */
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1000px;
+	width: 95%;
+	margin: 0px auto;
+	/*margin-left:10px;*/
+	-webkit-flex-flow: row wrap;
+	list-style: none; 
+}
+
+.column {
+	flex: 1;
+	margin: 30px 0px 20px;
+	padding: 10px;
+	
+}
+.exhibitstyles h2,.main h2,aside h2{
+	color: #800000;
+	border-bottom: 1px dotted #a1c392;
+	padding-bottom: 10px;	
+}
+.exhibitstyles h4{
+	padding: 15px 0px;
+}
+.exhibitstyles h4 span{
+	font-weight: normal;
+	font-size: 12px;
+	color: #800000;
+	display: inherit;
+	
+}
+.exhibitstyles img{
+	
+	width:100%;
+	border:0;
+}
+.exhibitstyles h3{
+	color: #C41230;
+	padding-top:10px;
+	font-size:15px;	
+}
+.exhibitstyles span{
+	font-weight:bold;
+
+}
+.exhibitstyles p{
+	margin-top:10px;
+	
+}
+.eventslist ul{
+	list-style:none;	
+}
+.eventslist ul li{
+	background-image: url('images/note.jfif'); 
+    background-size:50px;
+    background-repeat: no-repeat;
+    padding:15px;
+	background-position: left 13px;
+}
+.eventslist ul li span{
+	padding-left: 45px;
+	display: block;
+	font-weight: bold;
+	color:#555;
+}
+.eventslist h4,.eventslist div{
+	padding:10px 0px;
+	color:#555;
+	
+}
+.more{
+	color: #800000;
+}
+.about{
+	text-align:justify;
+	color:#555;
+	
+}
+.contentstyle p{	
+	padding-bottom: 25px;
+}
+.contentstyle img{
+	width:30%;
+	float:left;
+	margin-right:10px;
+}
+.contentstyle p:last-child img{
+	float:right;
+	margin-left:10px;		
+}
+.contentstyle ul{
+	list-style-type:none;
+	
+}
+.contentstyle ul li{
+	padding: 20px 0px;
+	border-bottom: 1px solid #e9e9e9;
+
+}
+.contentstyle h3{
+	color: #C41230;
+	font-size: 15px;
+	
+}
+.contentstyle span{
+	padding-bottom: 10px;
+	display:block;
+	font-weight:bold;
+	font-size: 10pt;
+
+}
+.contentstyle h4{
+	padding-bottom: 10px;
+	
+}
+.joinusimagestyle{
+	display:flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	margin-bottom:30px;
+	
+}
+.joinusimagestyle img{
+	
+	flex:1;
+	height:100%;
+}
+.gridview{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	margin: 0px auto;
+	-webkit-flex-flow: row wrap;
+}
+.gridview li {
+	padding: 10px;
+	border: 1px solid lightgrey;
+	margin: 10px;
+	width: 42%;
+}
+.member ul{
+	padding: 10px;
+	list-style: square inside;
+	margin: 30px 5px;
+
+}
+.member ul li{
+	padding: 10px;
+	background-color: #e3e3e3;
+	margin-top: 5px;
+}
+.member ul li a{
+	font-weight: bold;
+}
+input {
+	font-size: 14px;
+	color: #000;
+	/*font-weight: bold;*/
+	line-height: 3em;
+	background-color: #fff;
+}
+/* style for submit button */
+input[type="submit"]{
+	background-color:#055C5C;
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	
+}
+
+/* styles for footer */
+footer {
+	padding: 0 5px;
+	background-color: #7E354D;
+	color: #fff;
+	clear:both;
+}
+footer p,footer h3,footer form,footer ul{
+	padding: 10px;
+	color:#fff;
+}
+footer ul{
+	list-style-type: none;
+}
+footer ul li{
+	list-style-type: circle;
+	padding-bottom: 10px;
+	margin-left: 28px;
+	
+}
+footer ul li a{
+	color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+footer ul li a:hover{
+	text-decoration:underline;
+	
+}
+
+/* style for responsive design */
+@media screen and (max-width:768px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 9pt 4pt;
+	}
+	.main {
+		float: none;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		width: 100%;
+	}
+	.gridview li {
+		width: 100%;
+	}
+}

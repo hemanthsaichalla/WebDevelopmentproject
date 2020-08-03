@@ -1,0 +1,131 @@
+<!--
+Hemanth Sai Challa	
+Red_ID:824670867
+CS545
+Assignment #4
+Fall 2019
+Instructor:Cyndi Chie
+-->
+<!doctype html>
+<html lang="en-US">
+<!--Head-->
+<head>
+	<title>San Diego State University Natural History Museum</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="signup.js"></script>
+</head>
+<!--Body-->
+<body onload="modify()">
+	<!--Start of Header-->
+	<header>
+		<div class="columns">
+			<div id="logo">
+				<a href="index.html">
+				<img src="images/logo.png" alt="logo of sdsu">
+				<h3>San Diego State University <br/>Natural History Museum </h3>
+				</a>
+			</div>
+		</div>
+		<!--Navigation/Menubar-->
+		<nav id="nav">
+			<ul class="columns">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>				
+				<li><a href="exhibitions.html">Exhibitions</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="science.html">Science</a></li>
+				<li class="dropdown"><a href="#">Get Involved</a>
+					<div class="dropdown-content">
+						<a href="member.html">Become a member</a>
+						<a href="donate.html">Donate</a>
+						<a href="volunteer.html">Volunteer Appication</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!--End of Header-->
+	</header>
+	<!--Start of mainbody content-->
+	<div class="columns exhibitstyles">
+		<article class="column">
+			<h2>Exhibits</h2>			
+			<a href="exhibitions.html">
+				<img src="images/exhibition5.jpg" alt="image of fossil mysteries"/>
+				<h4>Fossil mysteries<span>Opening December 10, 2018</span></h4>
+			</a>
+			<a href="exhibitions.html">
+				<img src="images/exhibition1.jpg" alt="image of gems"/>
+				<h4>Hidden Gems Coming soon<span>Opening December 10, 2018</span></h4>
+			</a>
+			<a href="exhibitions.html" class="more">More &gt;&gt;</a>
+		</article>
+		<article class="column">
+			<div>
+				<h2>Mission</h2>
+				<p class="about">The mission of the SDSU Natural History Museum is to interpret the natural world through research, education and exhibits;
+				to promote understanding of the evolution and diversity of southern California and the peninsula of Baja California; to train and grow our future 
+				leaders in research and conservation; and to inspire in all a respect for nature and the environment.</p>
+			</div>
+		</article>
+		<article class="column eventslist">
+			<h2>Upcoming Events</h2>
+			<h4>Citizen Science</h4>
+			<span><a href="events.html">Shot Hole Borer Citizen Science Project | October - December, 2018</a></span>
+			<p>We’re actively recruiting citizen scientists to help us set-up, check, and retrieve insect traps. 
+			Training will be provided—the only experience needed is comfort exploring the great outdoors, no formal background in science necessary. Three-day commitment required:
+			</p>
+			<ul>
+				<li><span>First Saturday October, 9 AM–2 PM: Training and trap deployment</span></li>
+				<li><span>First Saturday November: Mid-point tap check</span></li>
+				<li><span>First Saturday December: Collect traps, transport to The Museum, and analyze what you’ve found under a microscope</span></li>
+			</ul>
+			<a href="events.html" class="more">More &gt;&gt;</a>
+		</article>
+		<div class="column">				
+			<span>Last Modified: </span> <p id="lastModified"></p>
+		</div>
+	</div>
+	<!--End of mainbody content-->
+	
+	<!--Footer-->
+	<footer>
+		<div class="columns">
+			<div class="column">
+				<h3>Newsletter</h3>
+				<p>Receive the latest information about our new exhibitions, programs, events, and more.</p>
+				<form action="#">
+					<input type="email" placeholder="Email address" name="email"/>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="column">
+				<h3>Museum Hours</h3>
+				<p>Daily 10 AM to 5 PM</p>
+				<p>Closed when the campus is closed.</p>
+				<p>Hours subject to change. </p>
+			</div>
+			<div class="column">
+				<h3>Important Links</h3>
+				<ul>
+					<li><a href="member.html">Become a Member </a></li>
+					<li><a href="volunteer.html">Volunteer Application </a></li>
+					<li><a href="donate.html">Donate Now!</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Connect with us</h3>
+				<p>San Diego State University<br/>
+					Natural History Museum<br/>
+					San Diego, CA 92182-0000</p>
+				<p>(619)594-5200</p>
+				<address>Mailing address:nhmuseum@sdsu.edu</address>		
+			</div>
+		</div>
+	</footer>
+	<!--Footer end-->
+</body>
+	<!--/BODY-->
+</html>
+<!--End of HTML-->

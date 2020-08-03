@@ -1,0 +1,133 @@
+<!--
+Hemanth Sai Challa	
+Red_ID:824670867
+CS545
+Assignment #4
+Fall 2019
+Instructor:Cyndi Chie
+-->
+<!doctype html>
+<html lang="en-US">
+<!--Head-->
+<head>
+	<title>San Diego State University Natural History Museum</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="signup.js"></script>
+</head>
+<!--Body-->
+<body onload="modify()">
+	<!--Start of Header-->
+	<header>
+		<div class="columns">
+			<div id="logo">
+				<a href="index.html">
+				<img src="images/logo.png" alt="logo of sdsu">
+				<h3>San Diego State University <br/>Natural History Museum </h3>
+				</a>
+			</div>
+		</div>
+		<!--Navigation/Menubar-->
+		<nav id="nav">
+			<ul class="columns">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="exhibitions.html">Exhibitions</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="science.html">Science</a></li>
+				<li class="dropdown"><a href="#">Get Involved</a>
+					<div class="dropdown-content">
+						<a href="member.html">Become a member</a>
+						<a href="donate.html">Donate</a>
+						<a href="volunteer.html">Volunteer Appication</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!--End of Header-->
+	</header>
+	<!--Start of mainbody content-->
+	<div class="columns">
+		<article class="main exhibitstyles">
+			<h2>Science</h2>
+			<ul class="gridview">
+				<li>
+					<img src="images/science1.jpg" alt="image of brcc mission"/>
+					<h3>BRCC Mission</h3>
+					<p>A strategic plan developed by the Biodiversity Research Center of the Californias (BRCC) and adopted by the Museum’s Board 
+					of Directors defines the BRCC's mission and region.</p>
+				</li>
+				<li>
+				<img src="images/science2.jpg" alt="images of desertsucculents"/>
+					<h3>Binational Expeditions</h3>
+					<p>The museum has many fascinating specimens in storage that have never been on display—until now. 
+					Don't miss this rare backstage glimpse of the Museum's storage areas.</p>
+				</li>
+				<li>
+					<img src="images/science3.jpg" alt="image of fossil"/>
+					<h3>Paleontological Mitigation Services</h3>
+					<p>PaleoServices is a consulting arm of the Museum specializing in the collection, salvage, preparation, and curation of paleontological 
+					resources (fossils) from development-slated acreage.Services also include record searches, paleontological resource assessment of properties, 
+					paleontological mitigation plans, and more.</p>
+				</li>
+				<li class="eventlist">
+					<img src="images/science4.jpg" alt="image of crystal gem"/>
+					<h3>Minerals are big here!</h3>
+					<p>Picture a mass of hot molten magma spreading below the Earth’s surface. As it cools slowly into solid rock, steam concentrates into trapped pockets that cool slowly over millennia. Geologists know 
+					these pockets are where to find amazing minerals such as tourmaline, topaz, and beryl, as well as common ones like quartz, and mica.</p>
+				</li>
+				<li class="eventlist">
+					<img src="images/science5.jpg" alt="image of Sandiego rocks"/>
+					<h3>San Diego on the move</h3>
+					<p>The complex geologic history of our region makes San Diego County mineral-rich and 
+					its terrain incredibly diverse. Plate tectonics and earthquakes play a big part in that story.</p>
+				</li>	
+			</ul>
+		</article>	
+        <div class="column">				
+			<span>Last Modified: </span> <p id="lastModified"></p>
+		</div>		
+	</div>
+	<!--End of mainbody content-->
+	
+	<!--start of Footer-->
+	<footer>
+		<div class="columns">
+			<div class="column">
+				<h3>Newsletter</h3>
+				<p>Receive the latest information about our new exhibitions, programs, events, and more.</p>
+				<form action="#">
+					<input type="email" placeholder="Email address" name="email"/>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="column">
+				<h3>Museum Hours</h3>
+				<p>Daily 10 AM to 5 PM</p>
+				<p>Closed when the campus is closed.</p>
+				<p>Hours subject to change. </p>
+			</div>
+			<div class="column">
+				<h3>Important Links</h3>
+				<ul>
+					<li><a href="member.html">Become a Member </a></li>
+					<li><a href="volunteer.html">Volunteer Application </a></li>
+					<li><a href="donate.html">Donate Now!</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Connect with us</h3>
+				<p>San Diego State University<br/>
+					Natural History Museum<br/>
+					San Diego, CA 92182-0000</p>
+				<p>(619)594-5200</p>
+				<address>Mailing address:nhmuseum@sdsu.edu</address>		
+			</div>
+		</div>
+	</footer>
+	<!--Footer end-->
+</body>
+	<!--/BODY-->
+</html>
+<!--End of HTML-->

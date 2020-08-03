@@ -1,0 +1,141 @@
+<!--
+Hemanth Sai Challa	
+Red_ID:824670867
+CS545
+Assignment #4
+Fall 2019
+Instructor:Cyndi Chie
+-->
+<!doctype html>
+<html lang="en-US">
+<!--Head-->
+<head>
+	<title>San Diego State University Natural History Museum</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="signup.js"></script>
+</head>
+<!--Body-->
+<body onload="modify()">
+	<!--Start of Header-->
+	<header>
+		<div class="columns">
+			<div id="logo">
+				<a href="index.html">
+				<img src="images/logo.png" alt="logo of sdsu">
+				<h3>San Diego State University <br>Natural History Museum </h3>
+				</a>
+			</div>
+		</div>
+		<!--Navigation/Menubar-->
+		<nav id="nav">
+			<ul class="columns">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>				
+				<li><a href="exhibitions.html">Exhibitions</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="science.html">Science</a></li>
+				<li class="dropdown"><a href="#">Get Involved</a>
+					<div class="dropdown-content">
+						<a href="member.html">Become a member</a>
+						<a href="donate.html">Donate</a>
+						<a href="volunteer.html">Volunteer Appication</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!--End of Header-->
+	</header>
+	<!--Start of mainbody content-->
+	<div class="columns">
+		<article class="main contentstyle">
+			<h2>Events</h2>
+			<h4>Get Involved!</h4>
+			<p>
+				How can you have fun while simultaneously contributing to science? By joining the global citizen science movement.
+				The Museum, independent naturalists, and outside organizations have created numerous citizen science projects aimed 
+				at helping scientists better understand the species that exists in any given region at any given time. 
+				Take part in the projects below to contribute to the exploration and creation of scientific knowledge. 
+				At The Museum, everyone is welcome to join in on the fun.
+			</p>
+			<h4>Shot Hole Borer Citizen Science Project | October - December, 2018</h4>
+			<div class="joinusimagestyle">
+				<img src="images/event1.jpg" alt="image of microscope"/>
+				<img src="images/event2.jpg" alt="image of research material"/>
+			</div>
+			<h4>Help combat invasive species</h4>
+			<p>
+				They may be small, but shot hole borer beetles are doing big damage in San Diego. 
+				These pests threaten our fragile river woodlands by infesting willows and sycamores, leaving dead, broken trunks in their wake.
+			</p>
+			<p>
+				To help combat the damage being done by this invasive species, the SDSU Natural History Museum (The Museum) and 
+				the San Diego River Park Foundation are teaming up to monitor the beetle’s presence in the San Diego River Watershed—and we need your help!
+			</p>
+			<h4>How you can help</h4>
+			<p>We’re actively recruiting citizen scientists to help us set-up, check, and retrieve insect traps. 
+			Training will be provided—the only experience needed is comfort exploring the great outdoors, no formal background in science necessary. Three-day commitment required:
+			</p>
+			<div class="eventslist">
+				<ul>
+					<li><span>First Saturday October, 9 AM–2 PM: Training and trap deployment</span></li>
+					<li><span>First Saturday November: Mid-point tap check</span></li>
+					<li><span>First Saturday December: Collect traps, transport to The Museum, and analyze what you’ve found under a microscope</span></li>
+				</ul>
+			</div>
+			<div class="column">				
+                <form action="signup1.php">
+                    <input type="submit" value="Register for the event (JavaScript)">
+                </form>
+                <form action="signup.php">
+                    <input type="submit" value="Register for the event (PHP)">
+                </form>				
+            </div>
+			<div class="column">				
+				<span>Last Modified: </span> <p id="lastModified"></p>
+			</div>			
+		</article>		
+	</div>
+	<!--End of mainbody content-->
+	
+	<!--start of Footer-->
+	<footer>
+		<div class="columns">
+			<div class="column">
+				<h3>Newsletter</h3>
+				<p>Receive the latest information about our new exhibitions, programs, events, and more.</p>
+				<form action="#">
+					<input type="email" placeholder="Email address" name="email"/>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="column">
+				<h3>Museum Hours</h3>
+				<p>Daily 10 AM to 5 PM</p>
+				<p>Closed when the campus is closed.</p>
+				<p>Hours subject to change. </p>
+			</div>
+			<div class="column">
+				<h3>Important Links</h3>
+				<ul>
+					<li><a href="member.html">Become a Member </a></li>
+					<li><a href="volunteer.html">Volunteer Application </a></li>
+					<li><a href="donate.html">Donate Now!</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<h3>Connect with us</h3>
+				<p>San Diego State University<br/>
+					Natural History Museum<br/>
+					San Diego, CA 92182-0000</p>
+				<p>(619)594-5200</p>
+				<address>Mailing address:nhmuseum@sdsu.edu</address>		
+			</div>
+		</div>
+	</footer>
+	<!--Footer end-->
+</body>
+	<!--/BODY-->
+</html>
+<!--End of HTML-->

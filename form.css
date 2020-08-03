@@ -1,0 +1,97 @@
+/*
+Hemanth Sai Challa
+Red_ID:824670867
+CS545
+Assignment #3
+Fall 2019
+Instructor:Cyndi Chie
+*/
+form , .columns h1 {
+	text-align: center;
+}
+.columns h1 {
+	color: #800000;
+	margin: 20px 0;
+}
+.required, .error {
+	color: red;
+}
+fieldset {
+	border:1px solid  #555;
+}
+.gridview {
+	padding: 2px 0;
+}
+.gridview label {
+	width: 50%;
+	text-align: right;
+	line-height: 2.7;
+	margin-right: 2px;
+}
+.gridview div {
+	text-align: left;
+}
+.attendees {
+	padding: 5px 0;
+	margin: 5px 0;
+	border-top: 1px solid  #555;
+	border-bottom: 1px solid  #555;
+}
+.attendees span {
+	font-weight: bold;
+}
+.signupsuccess {
+	text-align: center;
+}
+.info {
+	display: inline-block;
+	font-weight:bold;
+	line-height: 1;
+	color: black;
+	width: 100%;
+	margin: 5px
+}
+.signup input, .signup select, .signup textarea {
+	border: 1px solid #008000;
+}
+textarea {
+	padding: 5px;
+}
+select {
+	height: 40px;
+	padding: 5px;
+	width: 258px;
+}
+option {
+	font-size: 14px;
+}
+.signupnewsletter {
+	margin: 10px 0;
+}
+/* styles for submit button */
+.submitbutton {
+	text-align: center;
+}
+.signup input[type="submit"]{
+  background-color:#055C5C;
+  border: none;
+  color: white;
+  text-decoration: none;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+/* style for responsive design */
+@media screen and (max-width:768px) {
+	.columns h1, .signupsuccess, .signupnewsletter {
+		text-align: left;
+	}
+	.signupform {
+		margin: 20px;
+	}
+	.gridview label {
+		text-align: left;
+		width: 100%;
+		line-height: 1.5;
+	}
+}
